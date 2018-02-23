@@ -5,7 +5,11 @@ import App from './App'
 import router from './router'
 import store from './store'
 import filters from './utils/filters'
+import Vant from 'vant';
+import 'lib-flexible'
+import 'vant/lib/vant-css/index.css';
 
+Vue.use(Vant);
 import VueScroller from 'vue-scroller'
 Vue.use(VueScroller)
 
@@ -16,11 +20,6 @@ import {post,fetch} from './utils/axios'
 Vue.prototype.$post = post;
 Vue.prototype.$fetch = fetch;
 
-import  { ToastPlugin,ConfirmPlugin,LoadingPlugin,DatetimePlugin} from 'vux'
-Vue.use(ToastPlugin)
-Vue.use(ConfirmPlugin)
-Vue.use(LoadingPlugin)
-Vue.use(DatetimePlugin)
 
 Vue.config.productionTip = false
 

@@ -3,7 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-const vuxLoader = require('vux-loader')     //新添加的内容，配置vux
+// const vuxLoader = require('vux-loader')     //新添加的内容，配置vux
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -83,6 +83,7 @@ let webpackConfig = {
   }
 }
 
-module.exports = vuxLoader.merge(webpackConfig, {
-  plugins: ['vux-ui']
-})
+// module.exports = vuxLoader.merge(webpackConfig, {
+//   plugins: ['vux-ui']
+// })
+module.exports = webpackConfig

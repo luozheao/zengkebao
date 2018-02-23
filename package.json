@@ -1,12 +1,12 @@
 {
-  "name": "temp-vux",
+  "name": "zengkebao",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "clghy <503773902@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "dev": "webpack-dev-server --inline --progress  --host 0.0.0.0 --config build/webpack.dev.conf.js",
+    "start": "npm run dev ",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
@@ -15,12 +15,12 @@
   "dependencies": {
     "axios": "^0.17.1",
     "fastclick": "^1.0.6",
+    "lib-flexible": "^0.3.2",
+    "vant": "^0.12.10",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vue-scroller": "^2.2.4",
-    "vuex": "^3.0.1",
-    "vux": "^2.7.7",
-    "vux-loader": "^1.1.30"
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -57,6 +57,7 @@
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
+    "px2rem-loader": "^0.1.7",
     "rimraf": "^2.6.0",
     "sass-loader": "^6.0.6",
     "selenium-server": "^3.0.1",

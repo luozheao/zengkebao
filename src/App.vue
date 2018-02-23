@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/scss/vux.scss';
+/*@import './assets/scss/vux.scss';*/
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

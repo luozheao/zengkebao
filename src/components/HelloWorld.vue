@@ -1,40 +1,37 @@
 <template>
-  <div @click="ssss()">
-    <h1>{{ msg }}<div class="ss">123456</div></h1>
-    <h2>{{author}}</h2>
+  <div >
+    <div class="test">123</div>
+    <van-button type="default"  size="mini">默认按钮</van-button>
+    <van-button type="primary"  size="small">主要按钮</van-button>
+    <van-button type="danger"  size="normal">危险按钮</van-button>
   </div>
 </template>
 
 <script>
-import * as vuxModel from '@/utils/vux'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+
     }
   },
   computed:{
-    author(){
-      return this.$store.state.author;
-    }
+
   },
   methods:{
-  	ssss(){
-  		vuxModel.toastModule(this,'warn','标题');
-  	}
+
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
 
-h1, h2 {
-  .ss{
-    color: #24ce70;
+<style scoped lang="scss" type="text/css">
+  .test{
+    width:320px;
+    height:100px;/*px*/
+    font-size:28px ;/*px*/
+    border: 1px solid red;/*no*/
   }
-  font-size: 1rem;
-  font-weight: normal;
-}
 </style>
+

@@ -6,7 +6,7 @@
 *   Vuex : 全局状态通信
 *   axios：网络请求
 *   Vue-router：路由跳转,实现单页的核心
-*   Vux：移动端UI组件库
+*   Vant：移动端UI组件库
 *   fastclick：去除点击延时
 *   vue-scroller：刷新组件
 *   reset.css：初始化浏览器样式
