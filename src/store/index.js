@@ -7,7 +7,7 @@ const store = new Vuex.Store({
 	strict:true,   //使 Vuex store 进入严格模式，在严格模式下，任何 mutation 处理函数以外修改 Vuex state 都会抛出错误。
 	//定义状态
 	state:{
-		author:'mirs chen'
+		author:'luozheao'
 	},
 	//计算属性
 	getters:{

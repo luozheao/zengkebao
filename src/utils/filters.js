@@ -4,6 +4,8 @@
  */
 import Vue from 'vue'
 
+
+
 /**
  * 连接字符串
  */
@@ -111,7 +113,7 @@ Vue.filter('phoneStar',function(val){
  */
 Vue.filter('formatString',function(val){
   if(val != '' && val != undefined && val != null) {
-    //return new Array(val.length).join('*') + val.substr(-1);
+      return val.substr(0,1)+new Array(val.length).join('*') + val.substr(-1);
   }
 });
 
