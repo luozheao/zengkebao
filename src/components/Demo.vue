@@ -16,7 +16,8 @@
     computed: {},
     methods: {
 
-    }
+    },
+    mounted(){},
   }
 </script>
 
