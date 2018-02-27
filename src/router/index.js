@@ -9,6 +9,8 @@ import ResetPassword from '@/components/ResetPassword'
 import Home from '@/components/Home'
 import FlowGiftRecord from '@/components/FlowGiftRecord'
 import Report from '@/components/Report'
+import MyFans from '@/components/MyFans'
+import SendMsg from '@/components/SendMsg'
 
 //延迟加载
 //const HelloWorld = () => import('@/components/HelloWorld');
@@ -54,6 +56,16 @@ export default new Router({
                 }
               ]
             },
+             {
+               path: 'myFans',
+               component: MyFans,
+               children:[
+                 {
+                   path: 'sendMsg',
+                   component: SendMsg,
+                 }
+               ]
+             }
           ]
         }
       ]

@@ -3,11 +3,11 @@
     <van-cell-group style="padding-bottom: 15px;">
       <van-cell   class="cellTitle">
           <template slot="title">
-             <div  >流量赠送统计</div>
+             <div  class="van-cell-txt" >流量赠送统计</div>
           </template>
           <div @click="toBack">
-            <van-icon slot="right-icon"   name="arrow-left"  />
-            <div style="display:inline-block;">返回</div>
+          <van-icon slot="right-icon"  name="arrow-left"  />
+          <div  style="display: block;float: right; margin-top: -3px;" >返回</div>
           </div>
        </van-cell>
       <van-cell  class="dateChoose" >
@@ -151,7 +151,7 @@
 <style scoped lang="scss" type="text/scss">
 #report{
   @import "../../static/css/main.scss";
- .van-cell-text{
+ .van-cell-txt{
    border-left:10px solid  $themeColor;/*no*/
    padding-left: 15px;
  }

@@ -6,7 +6,9 @@
       <van-col span="8" class="flowGiftRecord"  >
           <router-link to="/home/flowGiftRecord" style="display:block;">赠送记录</router-link>
       </van-col>
-      <van-col span="8" class="myFans">我的粉丝</van-col>
+      <van-col span="8" class="myFans">
+         <router-link to="/home/myFans" style="display:block;">我的粉丝</router-link>
+        </van-col>
     </van-row>
     <van-row class="entrance">
       <van-col span="8" class="renew">流量卡续费</van-col>

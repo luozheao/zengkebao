@@ -8,7 +8,7 @@ import filters from './utils/filters'
 import Vant from 'vant';
 
 import 'lib-flexible'
-import 'vant/lib/vant-css/index.css';
+import '../static/css/index.css';
 Vue.use(Vant);
 
 
